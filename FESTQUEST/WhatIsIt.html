@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>What is it? | festQuest</title>
+    <link rel="stylesheet" href="CSS/css-global.css" type="text/css">
+    <!-- --------FONTS------------ --> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Chonburi" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- --------CONTAINER PAGE--------- --> 
+    <div class="container" id="festquest-container">
+        <!-- --------MAIN NAVBAR------------ --> 
+        <div class="NAVIGATION">
+            <div class="image-circle" id="image-circle">       
+                <a href="MainPage.html" class="active">
+                    <img class="img-logo" src="IMAGES/Question-Upd18.png" onmouseover="this.src='IMAGES/Question-Upd19.png'" onfocus="this.src='IMAGES/Question-Upd19.png'"  onmouseout="this.src='IMAGES/Question-Upd18.png'"
+                    onblur="this.src='IMAGES/Question-Upd18.png'" id="image" alt="Smiling Questionmark Logo: used as a homebutton">
+                </a>        
+            </div>               
+
+            <div class="navbar" id="mynavbar"> 
+                <ul class="buttons">
+                  <li><a id="button1" href="WhatIsIt.html" class="active">FESTQUEST?</a></li>
+                  <li><a id="button2" href="Events.html">EVENTS</a></li>
+
+                  <li><a id="button3" href="quiz.html">QUIZ</a></li>
+                  <li><a id="button4" href="contact.html">CONTACT</a></li>
+
+                </ul>
+                <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myNav()">&#9776;</a>
+            </div>
+        </div>
+
+        <!-- --------END MAIN NAVBAR------------ -->  
+
+        <!-- --------GREY BOX CONTAINER (BOX1)--------- --> 
+        <div class="box1">
+            <div class="box0"><h1> What Is FestQuest?</h1></div>
+            <div class="box2">
+                <img src="IMAGES/sunset%20colours.JPG" alt="A picturesque gathering of people at the setting sun">
+            </div>
+            <div class="text-boxes">
+                <div class="box3">
+                     <div class="box3_2">
+                         <h2>New Day Secret Events</h2>
+                         <div class="h4">
+                             Welcome to the land of the curious!  
+                             <br>We love questions - they make us learn, they make us experience, they teach us about the world around us and mostly - about ourselves!
+                             <br> We take that idea and invite people to experience what they haven't tried before. 
+                             <br>We provide gloriously decorated settings, entertainment like no other and a wealth of opportunities for people to share something new with other fellow adventurers.
+                             <br>We ask one thing of you: 
+                             <br>'Allow yourself to be surprised'! 
+
+                         </div>
+                    </div>
+                </div>
+                <div class="box4">
+                     <div class="box4_2">
+                         <h2>Fun, Yet Useful!</h2>
+                         <div class="h4">
+                             We love art, music, theatre and all that is beautiful in the world. We like to share this with others and urge people to do the same. 
+                             <br>Our events offer the opportunity for audience and artists to collaborate and allow each other to participate in the experience actively. 
+                             <br>Audience as artists and artists as audience - sharing our secrets to help each other grow.
+                             <br>In the spirit of collaboration - we offer a large portion of our earnings to charities, therefore we share not just inside the secret, but also with the world outside.
+                         </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box0"><h1> How Does It Work?</h1></div>
+
+            <div class="box5">
+                 <img src="IMAGES/musique.jpg" alt="A child playing piano on the street">
+            </div>
+            <div class="text-boxes">
+                <div class="box3">
+                     <div class="box3_2">
+                         <h2>Join The Other Kids!</h2>
+                         <div class="h4">
+                             If you have the feeling these events will bring out your child-like nature - you are absolutely right! 
+                             <br>We are happy to see people play, explore and laugh together. All that is needed is a brave first step and then the rest will be history.
+                             <br>
+                             Fill in the <a href="#booking-form">Join Us</a> form below and we will get in touch with you shortly. 
+                             <br>We choose our participants carefully, therefore by filling in the 'About You' section, you will help us decide whether this specific event is good for you. <br>The more sincere you are the more likely to be selected. See you on the other side!
+
+
+
+                         </div>
+                    </div>
+                </div>
+                <div class="box4">
+                     <div class="box4_2">
+                         <h2>Bring Joy To The World </h2>
+                         <div class="h4">
+                             Once you have been selected, you will receive a conformation that will allow you to book your tickets.
+                             <br>You will know the theme and the date of the event, but you will receive details about its location only a few hours before it takes place, 
+                             <br>We encourage you to dress up in style that you love, bring your nice big smile and enjoy the large variety of performances, installations, great people and surroundings.
+                             <br>We are always happy to hear from you, so feel free to drop us a line at our <a href="contact.html#comment-form">Comments</a> section. 
+                         </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- --------END GREY BOX CONTAINER (BOX1)--------- -->
+
+        <!-- --------CONTAINER BOOKING FORM(GREY - BOX1)--------- -->
+
+        <div class="box1" id="booking-form">
+            <!-- --------BOOKING FORM---------- -->
+            <form id ="comment-form" name = "formName" action="#comment-form" onsubmit="return checkForm(this);">
+                <!-- --------Field Format---------- -->
+                <div class="field">
+                    <div class="box0">
+                        <h1> Join Us: </h1>
+                    </div>
+
+                        <!-- Pick event -->
+                    <div class="rows">
+                        <label class="labels" for="rating">Event* </label>
+                        <select id="rating" name="selectRating" required>
+                            <option value="Select"> -- Select an Event -- </option>
+                            <option value="Event1">LONDON | 13.04.2019 | Bring The Spring Fest | £25 Entry | 12:00 Noon (GMT) </option>
+                            <option value="Event2">LONDON | 27.04.2019 | The Fairy Tailors  | £25 Entry | 20:00 (GMT)</option>
+                            <option value="Event3">LONDON | 04.05.2019 | Galaxies - Closer Than You Think | £25 Entry | 18:00 (GMT)</option>
+                            <option value="Event4">LONDON | 18.05.2019 | Workman's Treat | £25 Entry | 22:00 (GMT) </option>
+                            <option value="Event5">BRIGHTON | 01.06.2019 | Grown Up Kiddies Galore | £25 Entry | 14:00 (GMT)</option>
+                        </select>
+                    </div>    
+
+                    <!-- Name -->		
+                    <div class="rows">
+                        <label class="labels" for="names">Name *</label>
+                        <input type="text" id="names" name="inputfield" placeholder="Your name is..." required aria-required="true">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="rows">
+                        <label class="labels" for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="Your email is..." required aria-required="true">
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="rows">
+                        <label class="labels" for="tel">Phone</label>
+                        <input type="tel" inputmode="numeric" id="tel" name="tel" minlength="11"
+                        maxlength="11" size="11" placeholder="Optional(11 digits number)">
+                    </div>
+
+                    <!--About You -->    
+                    <div class="rows">            
+                        <label class="labels" for="comment-notes">About You*</label>
+                        <textarea name="comment-notes" id="comment-notes" rows="4" cols="1" onclick="clearText(this)" required aria-required="true">Tell us more about yourself and why you want to join...
+                        </textarea>
+                    </div>
+
+
+                    <!-- Submit Button -->
+                    <div class="row">
+                        <input type="submit" name="submit" value="Book">
+                    </div> 
+
+                </div>
+                <!-- --------End Field---------- -->
+            </form>
+            <!-- --------End Form---------- -->
+        </div>
+        <!-- --------End Booking Form---------- -->
+    </div>
+    <!-- --------End Container Page---------- -->
+    
+    <!-- --------Footer---------- -->
+    <footer>
+        <div class="footer" id="footer-fest"><p id="foot-main">Created For: 
+            <a href="../CV-Yousef/CV.html" class="name"> Yousef Jayrwandi </a></p>
+            <p>By: <a href="https://dimguitar.wixsite.com/dimusic" class="name">Dimi Ralev</a></p>
+            <p>Back to Top:</p>
+            <div>
+                <a href="WhatIsIt.html">
+                    <img class="footer-logo" src="IMAGES/QuestionWhite.png" alt="Smiling Questionmark Logo: used as a link back to top">
+                </a>
+            </div>
+        </div>
+    
+    </footer>
+    
+
+ 
+    <!-- --------Java Script Code---------- -->
+    <script src="JS/JS-Global.js"></script>
+    <script src="JS/booking-form.js"></script>
+    
+</body>
+</html>

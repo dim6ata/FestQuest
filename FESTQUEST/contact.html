@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | festQuest</title>
+    <link rel="stylesheet" href="CSS/css-global.css" type="text/css">
+    <!-- --------FONTS------------ -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Chonburi" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <!-- ---------CONTACTS CONTAINER--------- -->
+    <div class="container" id="contacts-container">
+        <!-- ---------NAVIGATION--------- -->
+        <div class="NAVIGATION">
+            <div class="image-circle" id="image-circle">       
+                <a href="MainPage.html" class="active">
+                    <img class="img-logo" src="IMAGES/Question-Upd18.png" onmouseover="this.src='IMAGES/Question-Upd19.png'" onfocus="this.src='IMAGES/Question-Upd19.png'"  onmouseout="this.src='IMAGES/Question-Upd18.png'"
+                    onblur="this.src='IMAGES/Question-Upd18.png'" id="image" alt="Smiling Questionmark Logo: used as a homebutton">
+                </a>         
+            </div>             
+
+            <div class="navbar" id="mynavbar">  
+                <ul class="buttons">
+                    <li><a id="button4" href="contact.html" class="active">CONTACT</a></li>
+                    <li><a id="button1" href="WhatIsIt.html">FESTQUEST?</a></li>
+                    <li><a id="button2" href="Events.html">EVENTS</a></li>
+                    <li><a id="button3" href="quiz.html">QUIZ</a></li>
+                </ul>
+                <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myNav()">&#9776;</a>
+            </div>
+        </div>
+        <!-- ---------END NAVIGATION--------- -->
+        
+        <!-- ---------TASK STUDENT 3(SELVIN): CONTACT - (BOX1 Grey Box)--------- -->
+      
+        <div class="box1" id="box1id">
+          
+            
+          
+            <div class="box0" id="box0-contact"><h1> CONTACT</h1></div>
+                <!-- ---------IMAGES DIV--------- -->
+                <div class="row">
+                
+                    <div class="column" id="left-image">
+                        <img class="cv-image" id="img-l" src="../CV-Yousef/IMAGE/CV-purple-centred.jpg" alt="Picture of Student 2: Yousef Jayrwandi">
+                        <div class="yousef" id="yousef">
+                            <h1>Yousef Jayrwandi</h1>
+                            <div class="h3">SUPPORT 1</div>
+                        </div>    
+                    </div>
+                  
+                    <div class="column" id="right-image">
+                        <img class="cv-image" id="img-r" src="../CV-Selvin/IMAGE/selvin-portrait2.jpg" alt="Picture of Student 3: Selvin Mohamedi">
+                        <div class="selvin" id="selvin">
+                            <h1>Selvin Mohamedi</h1>
+                            <div class="h3">SUPPORT 2</div>
+                        </div>
+                    </div>
+          
+                </div>
+          
+        </div>
+        <!-- ---------END TASK STUDENT 3(SELVIN): CONTACT - (BOX1 Grey Box)--------- -->
+        
+        
+        <!-- ----------TASK STUDENT 2(YOUSEF): Comments Form----------- -->        
+        <div class="box1" id="box2id">
+           
+            <form id ="comment-form" name = "formName" action="#comment-form" onsubmit="return checkForm(this);">
+                <div class="field">
+                    <div class="box0">
+                        <h1> COMMENTS FORM: </h1>
+                    </div>
+
+
+                    <!-- Name -->		
+                    <div class="rows">
+                        <label class="labels" for="names">Name *</label>
+                        <input type="text" id="names" name="inputfield" placeholder="Your name is..." >
+                    </div>
+                    <!-- Email -->
+                    <div class="rows">
+                        <label class="labels" for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email is...">
+                    </div>
+                    <!-- Phone -->
+                    <div class="rows">
+                        <label class="labels" for="tel">Phone</label>
+                        <input type="tel" inputmode="numeric" id="tel" name="tel" minlength="11" maxlength="11" size="11" placeholder="Optional(11 digits number)">
+                    </div>
+
+                    <!-- Rating -->
+                    <div class="rows">
+                        <label class="labels" for="rating">Rate Us *</label>
+                        <select id="rating" name="selectRating">
+                            <option value="Select"> --Select One-- </option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Average">Average</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Poor">Poor</option>
+                        </select>
+                    </div>   
+                    
+                    <!-- Comment Tab -->
+                    <div class="rows">
+
+                        <label class="labels" for="comment-notes">Comments* </label>
+                        <textarea name="comment-notes" id="comment-notes" rows="5" cols="1" onclick="clearText(this)">Please, add any comments that you wish to share with us.</textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="row">
+                        <input type="submit" name="submit" value="Submit">
+                    </div>         
+
+                </div>
+                
+            </form>
+        </div>
+        
+    </div> 
+    <!-- ---------END CONTAINER--------- -->
+    
+    <!-- ---------CONTACTS FOOTER--------- -->
+    <footer>
+        <div class="footer" id="footer-contact">
+            <p>Presentation by: <a href="../CV-Selvin/CV-selvin.html" class="name">Selvin Mohamedi</a></p>
+            <p>Form by: <a href="../CV-Yousef/CV.html" class="name"> Yousef Jayrwandi </a></p><p>Back to Top:</p>
+
+            <div>
+                <a href="contact.html">
+                    <img class="footer-logo" src="IMAGES/QuestionWhite.png" alt="Smiling Questionmark Logo: used as a link back to top">
+                </a>
+            </div>
+
+        </div>
+    
+    </footer>
+    <!-- ---------Java Script Code--------- -->
+    <script src="JS/contact.js"></script>    
+    <script src="JS/JS-Global.js"></script> 
+    <script src="JS/comment-form.js"></script>
+</body>
+</html>

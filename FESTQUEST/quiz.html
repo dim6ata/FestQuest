@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz | festQuest</title>
+    <link rel="stylesheet" href="CSS/css-global.css" type="text/css">
+    
+    <!-- ---------- FONTS  --------------- -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Chonburi" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- ---------- CONTAINER  --------------- -->
+    <div class="container" id="quiz-container">   
+         
+        <!------------MAIN NAVBAR---------------- -->  
+        <div class="NAVIGATION">
+            <div class="image-circle" id="image-circle">       
+                <a href="MainPage.html" class="active">
+                    <img class="img-logo" src="IMAGES/Question-Upd18.png" onmouseover="this.src='IMAGES/Question-Upd19.png'" onfocus="this.src='IMAGES/Question-Upd19.png'"  onmouseout="this.src='IMAGES/Question-Upd18.png'" onblur="this.src='IMAGES/Question-Upd18.png'" id="image" alt="Smiling Questionmark Logo: used as a homebutton">
+                </a>         
+            </div>               
+
+          <div class="navbar" id="mynavbar">  
+              <ul class="buttons">
+                  <li><a id="button3" href="quiz.html" class="active">QUIZ</a></li>
+                  
+                  <li><a id="button1" href="WhatIsIt.html">FESTQUEST?</a></li>
+                  
+                  <li><a id="button2" href="Events.html">EVENTS</a></li>
+                  
+                  <li><a id="button4" href="contact.html">CONTACT</a></li>
+
+              </ul>
+                  <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myNav()">&#9776;</a>
+         </div>
+        </div>
+        <!--------------MAIN NAV BAR END--------- --> 
+            
+            
+        
+        <!-- ---------- QUIZ START--------------- -->
+        <div id = "quiz-wrapper">
+
+            <h1 id="quiz_h1">
+                Are You Ready for a Secret?
+            </h1>
+
+            <button class="book-button" id="quiz-button" onclick="startQuiz()">Start Quiz</button>
+            
+            </div>
+        <div class="box1" id="quiz-questions">
+            <h1> QUIZ </h1>
+            <form id = "Secret_quiz" name = "Secret_quiz">
+                <!--THE QUESTIONS FOR THE QUIZ -->
+                <div class="qBox">
+                    
+                    <h2 class="quizNumber">Question 1</h2>
+                    
+                    <div class="h5">
+                        <p class ="question">If someone is acting strange on a special day, what do you think it means?</p>
+                    </div>
+                    <div class="h4">
+                        <input type ="radio" name = "question1" value = "They are planning a suprise party">They are planning a suprise party<br>
+                        <input type ="radio"  name = "question1" value = "They are hiding something">They are hiding something<br>
+                        <input type ="radio"  name = "question1" value = "They forgot what that day is and just realised it at the last minute">They forgot what that day is and just realised it at the last minute<br>
+                    </div>    
+                </div>
+                
+                
+                <div class="qBox">
+                    
+                <h2 class="quizNumber">Question 2</h2>
+                <div class="h5">
+                <p class="question">What is the name of an event on Christmas where you give a present to someone anonymously?</p>
+                </div>
+                <div class="h4">    
+                    <input type ="radio" name = "question2" value = "suprise party">Suprise party<br>
+                    <input type ="radio" name = "question2" value = "Secret santa">Secret santa<br>
+                    <input type ="radio" name = "question2" value = "secret party">Secret party<br>
+                </div>    
+                    
+                </div>   
+                 
+                <div class="qBox">
+                    
+                    <h2 class="quizNumber">Question 3</h2>
+                    
+                    <div class="h5">
+                        <p class ="question">How would you plan a suprise party?
+                        </p>
+                    </div>
+                    <div class="h4">
+                        <input type ="radio" name = "question3" value = "Ensure that the person you are suprising doesn't find out without displaying strange behaviour">Ensure that the person you are suprising doesn't find out without displaying strange behaviour<br>
+	                    <input type ="radio" name = "question3" value = "act like nothings happening until the preperations are done">Act like nothing is happening until the preperations are done<br>
+	                    <input type ="radio" name = "question3" value = "tell the person about the party">Tell the person about the party<br>
+                    </div>    
+                </div>
+                    
+                <div class="qBox">
+                    
+                <h2 class="quizNumber">Question 4</h2>
+                <div class="h5">
+                <p class="question">What is the name of an event where you have to scavenge for various objects that would lead to the goal?</p>
+                </div>
+                <div class="h4">    
+                    <input type ="radio" name = "question4" value = "trick or treat"> Trick or treat<br>
+	                <input type ="radio" name = "question4" value = "hide and seek"> Hide and seek<br>
+	                <input type ="radio" name = "question4" value = "Treasure hunt"> Treasure hunt<br>
+                </div>    
+                    
+                </div>
+                
+                
+                <div class="qBox">
+                    
+                <h2 class="quizNumber">Question 5</h2>
+                <div class="h5">
+                <p class="question">If something went wrong when planning a suprise party and the person you are suprising found out, what would you do?</p>
+                </div>
+                <div class="h4">    
+                    <input type ="radio" name = "question5" value = "make up a story">Make up a story<br>
+	                <input type ="radio" name = "question5" value = "Inform the person you are suprising and make preparations next time">Inform the person you are suprising and make preparations next time<br>
+	                <input type ="radio" name = "question5" value = "stop everything"> Stop everything<br>
+                </div>    
+                    
+                </div>
+                
+                <div class="qBox">
+                    
+                <h2 class="quizNumber">Question 6</h2>
+                <div class="h5">
+                <p class="question">What is the most important thing when planning a suprise party?</p>
+                </div>
+                <div class="h4">    
+                    <input type ="radio" name = "question6" value = "tell others about it except the person your suprising">Tell others about it except the person you are suprising<br>
+	                <input type ="radio"  name = "question6" value = "suprise the person out of the blue">Suprise the person out of the blue<br>
+	                <input type ="radio"  name = "question6" value = "Plan and prepare in advanced">Plan and prepare in advanced<br>
+                </div>    
+                    
+                </div>
+                
+                <div class="qBox">
+                    
+                <h2 class="quizNumber">Question 7</h2>
+                <div class="h5">
+                <p class="question">When is the best time to suprise someone?</p>
+                </div>
+                <div class="h4">    
+                    <input type ="radio" name = "question7" value = "the middle of the night">The middle of the night<br>
+	                <input type ="radio"  name = "question7" value = "during work">during work<br>
+	                <input type ="radio"  name = "question7" value = "During the weekends or breaks">During the weekends or breaks<br>
+                </div>    
+                                
+                </div>
+                
+                <div class="qBox">
+                    
+                <h2 class="quizNumber">Question 8</h2>
+                <div class="h5">
+                <p class="question">Which day would a suprise party be the most appropriate?</p>
+                </div>
+                <div class="h4">    
+                    <input type ="radio" name = "question8" value = "easter">Easter<br>
+	                <input type ="radio" name = "question8" value = "Birthday">Birthday<br>
+	                <input type ="radio" name = "question8" value = "halloween">Halloween<br>
+                </div>    
+                                
+                </div>
+                
+                <div class="qBox">
+                    
+                <h2 class="quizNumber">Question 9</h2>
+                <div class="h5">
+                <p class="question">Which location would be appropriate for a party?</p>
+                </div>
+                <div class="h4">    
+                    <input type ="radio" name = "question9" value = "Somewhere the person you are suprising can get to">Somewhere the person you are suprising can get to<br>
+	                <input type ="radio"  name = "question9" value = "a different city">A different city<br>
+	                <input type ="radio"  name = "question9" value = "a different country">A different country<br>
+                </div>    
+                                
+                </div>
+                
+                
+                <div class="qBox">
+                    
+                <h2 class="quizNumber">Question 10</h2>
+                <div class="h5">
+                <p class="question">If an individual did not have a good day on the day of the party, what should you do?</p>
+                </div>
+                <div class="h4">    
+                    <input type ="radio"  name = "question10" value = "suprise them anyway">Suprise them anyway<br>
+                    <input type ="radio"  name = "question10" value = "Cheer the peson up first before suprising them">Cheer the person up first before suprising them<br>
+                    <input type ="radio"  name = "question10" value = "Tell them: 'Hakuna Matata!'">Tell them: "Hakuna Matata!"<br>
+                </div>    
+                                
+                </div>
+                
+                
+	
+    </form>
+            <button class="book-button" id="finishButton" onclick="finishQuiz()">Finish Quiz</button>
+            </div>
+            
+           
+           
+        <!-- missing div -->
+        <div id="result-box">
+        <div id="after_quiz">
+	       <p id ="answer_correct"></p>
+	       <p id = "mark"></p>
+	    </div>
+        </div>
+        
+        
+        <!-- ---------- QUIZ END  --------------- -->
+    </div>
+    <!-- ---------- CONTAINER END  --------------- -->
+       
+    
+    <!-- ---------- FOOTER --------------- -->
+    <footer>
+        <div class="footer" id="footer-quiz">
+            <p>Created by: <a href="../CV-Selvin/CV-selvin.html" class="name">Selvin Mohamedi</a></p>
+            <div>
+                <a href="quiz.html">
+                    <img class="footer-logo" src="IMAGES/QuestionWhite.png" alt="Smiling Questionmark Logo: used as a link back to top">
+                </a>
+            </div>
+
+        </div>
+    
+    </footer>
+    
+    <!-- ---------- JS External --------------- -->
+    <script>
+	document.getElementById("book-button").onclick = function() {
+	location.href = "MAIN-PAGE/quiz_question.html";
+	}
+	</script>
+    <script src="JS/JS-Global.js"></script>
+    <script src="JS/quiz.js"></script>
+
+    
+</body>
+</html>
