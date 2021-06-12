@@ -5,7 +5,7 @@
 - CSS used for styling. 
 - JavaScript used for effects and visual changes. 
 
-Screenshots: 
+### Site Screenshots: 
 
 <img src="https://github.com/dim6ata/FestQuest/blob/master/FESTQUEST/IMAGES/1.site.png"/>
 
